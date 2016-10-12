@@ -13,6 +13,7 @@ namespace Collecitons
             string[] strArray = { "First", "Second", "Third" };
 
             Console.WriteLine("This array has {0} items.", strArray.Length);
+            Console.WriteLine();
 
             foreach(string s in strArray)
             {
