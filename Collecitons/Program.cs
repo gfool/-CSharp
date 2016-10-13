@@ -10,10 +10,10 @@ namespace Collecitons
     {
         static void Main(string[] args)
         {
-            string[] strArray = { "First", "Second", "Third" };
+            System.Collections.ArrayList strArray = new System.Collections.ArrayList();
+            strArray.AddRange(new string[] { "First", "Second", "Third" });
 
-            Console.WriteLine("This array has {0} items.", strArray.Length);
-            Console.WriteLine();
+            Console.WriteLine("This array has {0} items.", strArray.Count);
 
             foreach(string s in strArray)
             {
@@ -21,8 +21,9 @@ namespace Collecitons
             }
             Console.WriteLine();
 
-            // 颠倒数组
-            Array.Reverse(strArray);
+            // 增加
+            strArray.Add("Fourth");
+            Console.WriteLine("This array has {0} items.", strArray.Count);
 
             foreach(string s in strArray)
             {
